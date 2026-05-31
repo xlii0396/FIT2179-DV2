@@ -1,36 +1,81 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Business Categories in Melbourne Food and Hospitality Data",
+
+  "title": "Main Business Types in Melbourne Food and Hospitality Data",
+
+  "width": 520,
+  "height": 360,
+
   "data": {
     "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/melbourne_business_categories.csv"
   },
+
   "transform": [
     {
-      "window": [{"op": "rank", "as": "rank"}],
-      "sort": [{"field": "count", "order": "descending"}]
+      "window": [
+        {
+          "op": "rank",
+          "as": "Rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "count",
+          "order": "descending"
+        }
+      ]
     },
-    {"filter": "datum.rank <= 12"}
+    {
+      "filter": "datum.Rank <= 10"
+    }
   ],
-  "mark": {"type": "circle", "opacity": 0.75},
+
+  "mark": {
+    "type": "circle",
+    "size": 350,
+    "color": "#6f4e37",
+    "opacity": 0.85
+  },
+
   "encoding": {
-    "x": {"field": "rank", "type": "ordinal", "title": "Rank"},
-    "y": {
-      "field": "Category",
-      "type": "nominal",
-      "title": "Business Category",
-      "sort": "-x"
-    },
-    "size": {
+    "x": {
       "field": "count",
       "type": "quantitative",
-      "title": "Number of Records",
-      "scale": {"range": [100, 2500]}
+      "title": "Number of Records (log scale)",
+      "scale": {
+        "type": "log"
+      }
     },
-    "color": {"field": "Category", "type": "nominal", "legend": null},
+
+    "y": {
+      "field": "Count",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null
+    },
+
     "tooltip": [
-      {"field": "Category", "type": "nominal"},
-      {"field": "count", "type": "quantitative"}
+      {
+        "field": "Rank",
+        "type": "ordinal",
+        "title": "Rank"
+      },
+      {
+        "field": "Count",
+        "type": "nominal",
+        "title": "Business Type"
+      },
+      {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Records"
+      }
     ]
   },
-  "config": {}
+
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
 }
