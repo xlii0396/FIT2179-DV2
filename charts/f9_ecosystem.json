@@ -33,7 +33,13 @@
           {"label": "Business Mix", "x": 0.7, "y": 0.7, "size": 1800}
         ]
       },
-      "mark": {"type": "circle", "opacity": 0.85, "color": "#6f4e37"},
+      "mark": {
+        "type": "circle",
+        "opacity": 0.82,
+        "color": "#d9c3ad",
+        "stroke": "#8a6a52",
+        "strokeWidth": 1.5
+      },
       "encoding": {
         "x": {"field": "x", "type": "quantitative", "axis": null, "scale": {"domain": [-1.3, 1.3]}},
         "y": {"field": "y", "type": "quantitative", "axis": null, "scale": {"domain": [-1.25, 1.25]}},
@@ -58,7 +64,7 @@
       },
       "mark": {
         "type": "text",
-        "color": "black",
+        "color": "#2c211b",
         "fontSize": 12,
         "fontWeight": "bold"
       },
