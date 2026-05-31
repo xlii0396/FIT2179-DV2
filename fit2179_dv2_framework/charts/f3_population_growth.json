@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Population Growth of Major Australian Cities (2001–2025)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/city_population_2001_2025.csv"
+  },
+  "width": 520,
+  "height": 300,
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal", "title": "Year"},
+    "y": {"field": "Population", "type": "quantitative", "title": "Population"},
+    "color": {"field": "City", "type": "nominal", "title": "City"},
+    "tooltip": [
+      {"field": "City", "type": "nominal"},
+      {"field": "Year", "type": "ordinal"},
+      {"field": "Population", "type": "quantitative"}
+    ]
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Café Concentration Across Melbourne CLUE Areas",
+  "width": 560,
+  "height": 480,
+  "data": {
+    "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/clue_area_cafe_counts.geojson",
+    "format": {"type": "json", "property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
+  "encoding": {
+    "color": {
+      "field": "properties.Cafe_Count",
+      "type": "quantitative",
+      "title": "Number of Cafés",
+      "scale": {"scheme": "yelloworangebrown"}
+    },
+    "tooltip": [
+      {"field": "properties.featurenam", "type": "nominal", "title": "Area"},
+      {
+        "field": "properties.Cafe_Count",
+        "type": "quantitative",
+        "title": "Cafés"
+      }
+    ]
+  },
+  "config": {}
+}

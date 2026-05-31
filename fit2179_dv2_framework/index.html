@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Culture in Melbourne vs Other Australian Cities</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Coffee Culture in Melbourne vs Other Australian Cities</h1>
+      <p>Basic webpage framework for FIT2179 Data Visualisation 2. Narrative text and final annotations can be added later.</p>
+    </header>
+
+    <section class="section">
+      <h2>Section 1 — City-Level Context</h2>
+      <p class="section-intro">Coffee prices, population size, and long-term city growth.</p>
+
+      <div class="grid-two">
+        <div class="chart-card">
+          <div class="chart-title">F1 — Average Coffee Price by City</div>
+          <div id="vis-f1" class="vis"></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-title">F2 — Population of Major Australian Cities</div>
+          <div id="vis-f2" class="vis"></div>
+        </div>
+      </div>
+
+      <div class="grid-one">
+        <div class="chart-card wide">
+          <div class="chart-title">F3 — Population Growth Trend</div>
+          <div id="vis-f3" class="vis"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Section 2 — Melbourne Coffee Landscape</h2>
+      <p class="section-intro">Café distribution, café share, and business category structure.</p>
+
+      <div class="grid-one">
+        <div class="chart-card wide">
+          <div class="chart-title">F4 — Café Distribution Across Melbourne Areas</div>
+          <div id="vis-f4" class="vis"></div>
+        </div>
+      </div>
+
+      <div class="grid-two">
+        <div class="chart-card">
+          <div class="chart-title">F5 — Café Share by Melbourne Area</div>
+          <div id="vis-f5" class="vis"></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-title">F6 — Business Category Breakdown</div>
+          <div id="vis-f6" class="vis"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Section 3 — Relationships and Interactivity</h2>
+      <p class="section-intro">Relationships and interactive comparisons.</p>
+
+      <div class="grid-one">
+        <div class="chart-card wide">
+          <div class="chart-title">F7 — Population vs Coffee Price</div>
+          <div id="vis-f7" class="vis"></div>
+        </div>
+
+        <div class="chart-card wide">
+          <div class="chart-title">F8 — Interactive Population Growth</div>
+          <div id="vis-f8" class="vis"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Section 4 — Final Understanding</h2>
+      <p class="section-intro">Custom summary diagram and choropleth map.</p>
+
+      <div class="grid-one">
+        <div class="chart-card wide">
+          <div class="chart-title">F9 — Melbourne Coffee Culture Ecosystem</div>
+          <div id="vis-f9" class="vis"></div>
+        </div>
+
+        <div class="chart-card wide">
+          <div class="chart-title">F10 — Café Concentration Map</div>
+          <div id="vis-f10" class="vis"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      FIT2179 Data Visualisation 2 · Author: Xuyuan Li · 2026
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

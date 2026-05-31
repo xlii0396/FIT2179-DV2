@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Population vs Coffee Price in Major Australian Cities",
+  "data": {
+    "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/city_population_price_2025.csv"
+  },
+  "mark": {"type": "circle", "size": 600, "opacity": 0.8},
+  "encoding": {
+    "x": {
+      "field": "Population",
+      "type": "quantitative",
+      "title": "Population (2025)"
+    },
+    "y": {
+      "field": "Coffee_Price_AUD",
+      "type": "quantitative",
+      "title": "Average Coffee Price (AUD)"
+    },
+    "color": {"field": "City", "type": "nominal"},
+    "tooltip": [
+      {"field": "City"},
+      {"field": "Population"},
+      {"field": "Coffee_Price_AUD"}
+    ]
+  },
+  "config": {}
+}

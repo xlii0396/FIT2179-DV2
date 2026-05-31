@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Share of Cafés by Melbourne Area",
+  "data": {
+    "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/melbourne_cafe_counts_by_area.csv"
+  },
+  "transform": [
+    {
+      "joinaggregate": [
+        {"op": "sum", "field": "Cafe_Count", "as": "Total_Cafes"}
+      ]
+    },
+    {
+      "calculate": "datum.Cafe_Count / datum.Total_Cafes * 100",
+      "as": "Cafe_Share"
+    },
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "Cafe_Share", "order": "descending"}]
+    },
+    {"filter": "datum.rank <= 10"}
+  ],
+  "mark": {"type": "arc", "innerRadius": 60},
+  "encoding": {
+    "theta": {"field": "Cafe_Share", "type": "quantitative"},
+    "color": {"field": "CLUE small area", "type": "nominal", "title": "Area"},
+    "tooltip": [
+      {"field": "CLUE small area", "type": "nominal", "title": "Area"},
+      {
+        "field": "Cafe_Count",
+        "type": "quantitative",
+        "title": "Number of Cafés"
+      },
+      {
+        "field": "Cafe_Share",
+        "type": "quantitative",
+        "title": "Share (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {}
+}
