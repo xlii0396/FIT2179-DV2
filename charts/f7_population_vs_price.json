@@ -1,9 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Population vs Coffee Price in Major Australian Cities",
   "data": {
     "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/city_population_price_2025.csv"
   },
+  "width": "container",
+  "height": 340,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "mark": {"type": "circle", "size": 600, "opacity": 0.8},
   "encoding": {
     "x": {

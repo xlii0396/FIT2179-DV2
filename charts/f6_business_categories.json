@@ -1,10 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-
-  "title": "Main Business Types in Melbourne Food and Hospitality Data",
-
-  "width": 520,
+  "width": "container",
   "height": 360,
+  "autosize": {"type": "fit-x", "contains": "padding"},
 
   "data": {
     "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/melbourne_business_categories.csv"

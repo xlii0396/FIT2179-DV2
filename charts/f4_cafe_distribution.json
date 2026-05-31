@@ -1,9 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Café Distribution Across Melbourne Areas",
   "data": {
     "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/melbourne_cafe_counts_by_area.csv"
   },
+  "width": "container",
+  "height": 420,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "transform": [
     {"window": [{"op": "rank", "as": "rank"}]},
     {"filter": "datum.rank <= 15"}

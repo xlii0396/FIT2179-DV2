@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Café Concentration Across Melbourne CLUE Areas",
-  "width": 560,
-  "height": 480,
+  "width": "container",
+  "height": 520,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/clue_area_cafe_counts.geojson",
     "format": {"type": "json", "property": "features"}

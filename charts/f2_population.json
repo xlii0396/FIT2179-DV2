@@ -1,9 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Population of Major Australian Cities (2025)",
   "data": {
     "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/city_population_2025.csv"
   },
+  "width": "container",
+  "height": 260,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "mark": {"type": "bar", "color": "#4C78A8"},
   "encoding": {
     "y": {"field": "City", "type": "nominal", "sort": "-x"},

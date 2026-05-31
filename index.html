@@ -15,21 +15,23 @@
   <main class="page">
     <header>
       <h1>Coffee Culture in Melbourne vs Other Australian Cities</h1>
-      <p>Basic webpage framework for FIT2179 Data Visualisation 2. Narrative text and final annotations can be added later.</p>
+      <p>This visualisation explores whether Melbourne's reputation as a coffee city is supported by data. It compares coffee prices, population patterns, café concentration, and business distribution across Melbourne and other major Australian cities.</p>
     </header>
 
     <section class="section">
       <h2>Section 1 — City-Level Context</h2>
-      <p class="section-intro">Coffee prices, population size, and long-term city growth.</p>
+      <p class="section-intro">Before focusing on Melbourne, this section compares major Australian cities. It shows how coffee prices and population size differ across cities, and how these cities have grown over time.</p>
 
       <div class="grid-two">
         <div class="chart-card">
           <div class="chart-title">F1 — Average Coffee Price by City</div>
+          <p class="chart-note">This chart compares the average price of a regular cappuccino across five major Australian cities. It shows that Melbourne is not the most expensive coffee city, even though it is often associated with coffee culture.</p>
           <div id="vis-f1" class="vis"></div>
         </div>
 
         <div class="chart-card">
           <div class="chart-title">F2 — Population of Major Australian Cities</div>
+          <p class="chart-note">This chart compares the 2025 population of major Australian cities. Sydney and Melbourne have the largest populations, which helps explain why both cities have large café markets.</p>
           <div id="vis-f2" class="vis"></div>
         </div>
       </div>
@@ -37,6 +39,7 @@
       <div class="grid-one">
         <div class="chart-card wide">
           <div class="chart-title">F3 — Population Growth Trend</div>
+          <p class="chart-note">This line chart shows population growth from 2001 to 2025. Melbourne and Sydney remain the two largest cities, while Brisbane and Perth also show steady long-term growth.</p>
           <div id="vis-f3" class="vis"></div>
         </div>
       </div>
@@ -44,11 +47,12 @@
 
     <section class="section">
       <h2>Section 2 — Melbourne Coffee Landscape</h2>
-      <p class="section-intro">Café distribution, café share, and business category structure.</p>
+      <p class="section-intro">This section focuses on Melbourne itself. It shows where cafés are concentrated and how the café landscape is shaped by different areas and business types.</p>
 
       <div class="grid-one">
         <div class="chart-card wide">
           <div class="chart-title">F4 — Café Distribution Across Melbourne Areas</div>
+          <p class="chart-note">This chart ranks Melbourne areas by the number of cafés. The CBD clearly dominates, showing that Melbourne's coffee activity is highly concentrated in central areas.</p>
           <div id="vis-f4" class="vis"></div>
         </div>
       </div>
@@ -56,11 +60,13 @@
       <div class="grid-two">
         <div class="chart-card">
           <div class="chart-title">F5 — Café Share by Melbourne Area</div>
+          <p class="chart-note">This donut chart shows the share of cafés by area. It highlights how much of Melbourne's café culture is concentrated in a small number of central locations.</p>
           <div id="vis-f5" class="vis"></div>
         </div>
 
         <div class="chart-card">
           <div class="chart-title">F6 — Business Category Breakdown</div>
+          <p class="chart-note">This bubble chart shows the major business categories in the Melbourne hospitality dataset. Cafés and restaurants form the largest group, showing the importance of food and drink businesses in Melbourne's urban life.</p>
           <div id="vis-f6" class="vis"></div>
         </div>
       </div>
@@ -68,16 +74,18 @@
 
     <section class="section">
       <h2>Section 3 — Relationships and Interactivity</h2>
-      <p class="section-intro">Relationships and interactive comparisons.</p>
+      <p class="section-intro">This section connects different variables together. Instead of only showing separate rankings, it explores how population, coffee prices, and city growth relate to each other.</p>
 
       <div class="grid-one">
         <div class="chart-card wide">
           <div class="chart-title">F7 — Population vs Coffee Price</div>
+          <p class="chart-note">This scatter plot compares city population with average coffee price. It shows that a larger population does not automatically mean higher coffee prices. For example, Sydney has the largest population but one of the lower coffee prices.</p>
           <div id="vis-f7" class="vis"></div>
         </div>
 
         <div class="chart-card wide">
           <div class="chart-title">F8 — Interactive Population Growth</div>
+          <p class="chart-note">This interactive line chart allows users to select a city and focus on its population growth. It helps users compare Melbourne's growth against other major Australian cities more clearly.</p>
           <div id="vis-f8" class="vis"></div>
         </div>
       </div>
@@ -85,18 +93,25 @@
 
     <section class="section">
       <h2>Section 4 — Final Understanding</h2>
-      <p class="section-intro">Custom summary diagram and choropleth map.</p>
+      <p class="section-intro">The final section summarises the main story. Melbourne's coffee culture is not only about price or population, but also about café density, central concentration, and the structure of local hospitality businesses.</p>
 
       <div class="grid-one">
         <div class="chart-card wide">
           <div class="chart-title">F9 — Melbourne Coffee Culture Ecosystem</div>
+          <p class="chart-note">This custom diagram summarises the key factors behind Melbourne's coffee culture: population growth, coffee price, café density, CBD concentration, and business mix. It acts as a bridge between the statistical charts and the final map.</p>
           <div id="vis-f9" class="vis"></div>
         </div>
 
         <div class="chart-card wide">
           <div class="chart-title">F10 — Café Concentration Map</div>
+          <p class="chart-note">This choropleth map shows where cafés are concentrated across Melbourne CLUE areas. Darker areas have more cafés, making it clear that Melbourne's café culture is spatially clustered around central districts.</p>
           <div id="vis-f10" class="vis"></div>
         </div>
+      </div>
+
+      <div class="conclusion-box">
+        <h3>Conclusion</h3>
+        <p>Overall, the data suggests that Melbourne's coffee culture is not simply explained by high prices or population size. Instead, it is shaped by a strong concentration of cafés in central areas, a large hospitality sector, and long-term urban growth.</p>
       </div>
     </section>
 

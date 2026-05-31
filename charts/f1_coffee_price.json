@@ -1,9 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Average Coffee Price by City",
   "data": {
     "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/city_coffee_prices.csv"
   },
+  "width": "container",
+  "height": 260,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "mark": {"type": "bar", "color": "#6f4e37"},
   "encoding": {
     "y": {"field": "City", "type": "nominal", "sort": "-x"},

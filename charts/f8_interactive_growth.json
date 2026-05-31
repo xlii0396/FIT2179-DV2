@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "title": "Interactive Population Growth of Major Australian Cities (2001–2025)",
   "data": {
     "url": "https://raw.githubusercontent.com/xlii0396/FIT2179-DV2/refs/heads/main/city_population_2001_2025.csv"
   },
-  "width": 560,
-  "height": 320,
+  "width": "container",
+  "height": 340,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "params": [
     {
       "name": "citySelect",
